@@ -1,0 +1,140 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: rgb(20, 20, 20);
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+html,
+body {
+  background-color: rgb(20, 20, 20);
+}
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgb(0, 0, 0);
+  position: relative;
+}
+section {
+  padding-top: 1em;
+}
+
+
+
+/*
+ * Header
+ */
+.navbar {
+  background: rgb(50, 50, 50);
+  position: fixed;
+  width: 58em;
+  z-index: 9999;
+}
+.masthead {
+  margin-bottom: 2rem;
+}
+.nav-masthead .nav-link {
+  padding: .2rem 0;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+.nav-masthead .nav-item + .nav-item {
+  margin-left: 1rem;
+}
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: rgb(255,80,80);
+}
+.navbar-brand {
+	color: rgb(255, 231, 231);
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover-container {
+  max-width: 60em;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+object {
+	padding: 0 1.5rem;
+	height: max-content;
+}
+.img-circle {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+	width: 15rem;
+  height: 15rem;
+	margin-bottom: 2em;
+	margin-top: 6em;
+	box-shadow: 0 0 5rem rgb(0, 0, 0);
+}
+.cover-heading {
+	font-family: 'DM Serif Display', serif;
+}
+.subheading {
+	margin-top: 6rem;
+	font-family: 'DM Serif Display', serif;
+}
+
+
+
+/*
+ * Projects
+ */
+.card {
+	background-color: rgb(34, 34, 34);
+}
+.card-title {
+	color: rgb(255,80,80);
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+	color: rgba(255, 255, 255, .5);
+	padding-bottom: 2rem;
+	text-align: left;
+}
