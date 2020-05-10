@@ -20,12 +20,13 @@ a:hover {
 }
 
 
+
 /*
  * Base structure
  */
 html,
 body {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(30, 30, 30);
 }
 body {
   display: -ms-flexbox;
@@ -49,10 +50,10 @@ section {
  * Header
  */
 .navbar {
-  background: rgb(50, 50, 50);
-  position: fixed;
-  width: 58em;
+  background: rgba(30, 30, 30, 0.95);
+  // position: fixed;
   z-index: 9999;
+  // width: 58em;
 }
 .masthead {
   margin-bottom: 2rem;
@@ -75,9 +76,7 @@ section {
   color: #fff;
   border-bottom-color: rgb(255,80,80);
 }
-.navbar-brand {
-	color: rgb(255, 231, 231);
-}
+
 
 
 /*
