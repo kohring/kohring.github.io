@@ -14,7 +14,6 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: rgb(20, 20, 20);
-  text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
 }
@@ -36,7 +35,6 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgb(0, 0, 0);
   position: relative;
 }
@@ -51,9 +49,7 @@ section {
  */
 .navbar {
   background: rgba(30, 30, 30, 0.95);
-  // position: fixed;
   z-index: 9999;
-  // width: 58em;
 }
 .masthead {
   margin-bottom: 2rem;
@@ -113,9 +109,9 @@ object {
 }
 .subheading {
 	margin-top: 6rem;
+	margin-bottom: 1rem;
 	font-family: 'DM Serif Display', serif;
 }
-
 
 
 /*
@@ -127,6 +123,51 @@ object {
 .card-title {
 	color: rgb(255,80,80);
 }
+
+
+
+/*
+ * Teaching
+ */
+.list-group-item {
+  text-align: left;
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+.list-group-item.active, .list-group-item:focus {
+  background-color: rgb(255,80,80);
+  border-color: rgb(255,80,80);
+  color: white;
+}
+.list-group-item:hover {
+  background-color: rgb(228, 228, 228);
+  border-color: rgb(228, 228, 228);
+}
+.tab-pane {
+  text-align: left;
+}
+
+/*
+ * Contact
+ */
+.social {
+	margin-bottom: 6rem;
+}
+.social-icon {
+  border-radius: 2px;
+  background-color: rgb(211, 211, 211);
+  display: inline-block;
+  padding:2px;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  font-size: 27px;
+}
+.social-icon:hover, .social-icon:active, .social-icon:focus {
+  background-color: rgb(255,80,80);
+}
+
 
 
 /*
