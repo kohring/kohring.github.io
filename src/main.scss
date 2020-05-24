@@ -8,17 +8,21 @@ a:focus,
 a:hover {
   color: #fff;
 }
+:root {
+  --main-color: rgb(255, 80, 80);
+}
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
   color: rgb(20, 20, 20);
-  background-color: #fff;
+  background-color: white;
   border: .05rem solid #fff;
 }
-
-
+.btn-secondary:hover {
+  background-color: var(--main-color);
+  border: .05rem solid var(--main-color);
+}
 
 /*
  * Base structure
@@ -41,7 +45,15 @@ body {
 section {
   padding-top: 1em;
 }
-
+/* change text selcetion color */
+::-moz-selection { 
+  color: white;
+  background: var(--main-color);
+}
+::selection {
+  color: white;
+  background: var(--main-color);
+}
 
 
 /*
@@ -70,7 +82,7 @@ section {
 }
 .nav-masthead .active {
   color: #fff;
-  border-bottom-color: rgb(255,80,80);
+  border-bottom-color: var(--main-color);
 }
 
 
@@ -82,7 +94,7 @@ section {
   padding: 0 1.5rem;
 }
 .cover-container {
-  max-width: 60em;
+  max-width: 65em;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -109,19 +121,25 @@ object {
 }
 .subheading {
 	margin-top: 6rem;
-	margin-bottom: 1rem;
+	margin-bottom: .8rem;
 	font-family: 'DM Serif Display', serif;
 }
+
+
 
 
 /*
  * Projects
  */
 .card {
-	background-color: rgb(34, 34, 34);
+  background-color: rgb(41, 41, 41);
+  text-align: left;
+}
+.card:hover {
+  background-color: rgb(54, 54, 54);
 }
 .card-title {
-	color: rgb(255,80,80);
+	color: var(--main-color);
 }
 
 
@@ -135,18 +153,23 @@ object {
   border-color: white;
   color: black;
 }
-.list-group-item.active, .list-group-item:focus {
-  background-color: rgb(255,80,80);
-  border-color: rgb(255,80,80);
+.list-group-item.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
   color: white;
 }
 .list-group-item:hover {
-  background-color: rgb(228, 228, 228);
-  border-color: rgb(228, 228, 228);
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(240, 240, 240);
+  color: black;
+  text-decoration: none !important
 }
 .tab-pane {
   text-align: left;
 }
+
+
+
 
 /*
  * Contact
@@ -156,16 +179,16 @@ object {
 }
 .social-icon {
   border-radius: 2px;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(180, 180, 180);
   display: inline-block;
-  padding:2px;
+  padding: 3px;
   width: 50px;
   height: 50px;
   margin: 8px;
   font-size: 27px;
 }
 .social-icon:hover, .social-icon:active, .social-icon:focus {
-  background-color: rgb(255,80,80);
+  background-color: var(--main-color);
 }
 
 
@@ -173,8 +196,9 @@ object {
 /*
  * Footer
  */
-.mastfoot {
-	color: rgba(255, 255, 255, .5);
+.page-footer {
+  color: rgba(255, 255, 255, .5);
+  padding-top: 2em;
 	padding-bottom: 2rem;
-	text-align: left;
+  text-align: left;
 }
