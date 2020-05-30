@@ -43,6 +43,7 @@
             <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+            <li class="nav-item"><a class="nav-link" href="#coding">Coding</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -236,6 +237,81 @@
               <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.</div>
               <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.</div>
               <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip veniam minim.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coding -->
+      <section id="coding">
+        <h2 class='subheading'>Coding</h2>
+        <p>a rough graphical assessment of my progamming experience</p>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+        <script>
+          $(document).ready(function() {
+            var ctx = $("#chart-line");
+            var myLineChart = new Chart(ctx, {
+              type: 'radar',
+              data: {
+                labels: ['Matlab', 'Java', 'C++', 'Python', 'R'],
+                datasets: [{
+                  data: [50, 40, 30, 90, 30],
+                  label: "skill level",
+                  borderColor: '#FF5050',
+                  backgroundColor: '#FF5050',
+                  fill: false
+                }]
+              },
+              options: {
+                legend: {
+                  display: false,
+                },
+                scale: {
+                  ticks: {
+                    maxTicksLimit: 5,
+                    suggestedMin: 0,
+                    suggestedMax: 100,
+                    display: false
+                  },
+                  gridLines: {
+                    color: '#505050'
+                  },
+                  angleLines: {
+                    display: true,
+                    color: '#505050',
+                  },
+                  pointLabels: {
+                    fontSize: 16,
+                    fontColor: '#FFFFFF',
+                    fontFamiliy: 'Helvetica Neue',
+                  }
+                }
+              }
+            });
+          });
+        </script>
+        <div class="page-content page-container" id="page-content">
+          <div class="padding">
+            <div class="row">
+              <div class="container-fluid d-flex justify-content-center">
+                <div class="col-sm-8 col-md-6">
+                  <div class="card">
+                    <div class="card-header">Programming Languages</div>
+                    <div class="card-body">
+                      <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                        <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                          <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                          <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                        </div>
+                      </div>
+                      <canvas id="chart-line" width="299" height="200" class="chartjs-render-monitor" style="display: block; width: 299px; height: 200px;"></canvas>
+                      Note: Other experiences include working with git and continuous integration. In Python, I've worked with the common ML frameworks like PyTorch, TensorFlow, and Scikit-Learn.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
