@@ -26,9 +26,8 @@
 	width: 6px;
 	height: 100%;
 	margin-left: -3px;
-	background: rgb(80,80,80);
+	background: rgb(80, 80, 80);
 	background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
 	background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
 	background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
 	background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
@@ -69,7 +68,7 @@
 	border-radius: 5px;
 	font-weight: 600;
 	text-align: left;
-	color: rgb(0,0,0);
+	color: rgb(0, 0, 0);
 }
 .direction-l .flag:before,
 .direction-r .flag:before {
@@ -116,7 +115,7 @@
 }
 .desc {
 	margin: 1em 0.75em 0 0;
-	font-size: 0.77777em;
+	font-size: 0.78em;
 	line-height: 1.5em;
 }
 .direction-r .desc {
@@ -126,34 +125,26 @@
 
 
 /* 
-	Timeline Media Queries 
+	Timeline Media Queries
 */
 @media screen and (max-width: 660px) {
-
 	.timeline {
-		width: 100%;
+		width: 97%;
 		padding: 4em 0 1em 0;
 	}
-
 	.timeline li {
 		padding: 2em 0;
 	}
-
 	.direction-l,
 	.direction-r {
+		padding: 0.8em 0 1em 0;
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-
 	.flag-wrapper {
 		text-align: center;
 	}
-
-	.flag {
-		background: rgb(255,255,255);
-	}
-
 	.direction-l .flag:before,
 	.direction-r .flag:before {
 		position: absolute;
@@ -163,12 +154,10 @@
 		display: block;
 		width: 12px;
 		height: 12px;
-		margin-left: -9px;
-		background: #fff;
+		margin-left: -5.5px;
 		border-radius: 10px;
 		border: 4px solid var(--main-color);
 	}
-
 	.direction-l .flag:after,
 	.direction-r .flag:after {
 		content: "";
@@ -179,47 +168,25 @@
 		width: 0;
 		margin-left: -8px;
 		border: solid transparent;
-		border-bottom-color: rgb(255,255,255);
 		border-width: 8px;
 		pointer-events: none;
 	}
-
-	.time-wrapper {
+	.timeline:before {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		content: ' ';
 		display: block;
-		position: relative;
-		margin: 4px 0 0 0;
+		width: 6px;
+		height: 100%;
+		margin-left: -3px;
+		background: rgb(40, 40, 40);
+		background: -moz-linear-gradient(top, rgba(40,40,40,0) 0%, rgb(40,40,40) 8%, rgb(40,40,40) 92%, rgba(40,40,40,0) 100%);
+		background: -webkit-linear-gradient(top, rgba(40,40,40,0) 0%, rgb(40,40,40) 8%, rgb(40,40,40) 92%, rgba(40,40,40,0) 100%);
+		background: -o-linear-gradient(top, rgba(40,40,40,0) 0%, rgb(40,40,40) 8%, rgb(40,40,40) 92%, rgba(40,40,40,0) 100%);
+		background: -ms-linear-gradient(top, rgba(40,40,40,0) 0%, rgb(40,40,40) 8%, rgb(40,40,40) 92%, rgba(40,40,40,0) 100%);
+		background: linear-gradient(to bottom, rgba(40,40,40,0) 0%, rgb(40,40,40) 8%, rgb(40,40,40) 92%, rgba(40,40,40,0) 100%);
 	}
-
-	.direction-l .time-wrapper {
-		float: none;
-	}
-
-	.direction-r .time-wrapper {
-		float: none;
-	}
-
 	.desc {
-		position: relative;
-		margin: 1em 0 0 0;
-		padding: 1em;
-		background: rgb(245,245,245);
-		-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-		-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
-		box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		font-size: 0.9em;
 	}
-
-	.direction-l .desc,
-	.direction-r .desc {
-		position: relative;
-		margin: 1em 1em 0 1em;
-		padding: 1em;
-	}
-
-}
-
-@media screen and (min-width: 400px ?? max-width: 660px) {
-	.direction-l .desc,
-	.direction-r .desc {
-		margin: 1em 4em 0 4em;
-	}
-}
