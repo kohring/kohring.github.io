@@ -61,7 +61,7 @@ section {
  * Header
  */
 .navbar {
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(25, 25, 25, 0.95) !important;
   z-index: 9999;
 }
 .masthead {
@@ -71,7 +71,6 @@ section {
   padding: .2rem 0;
   font-weight: 600;
   color: rgba(255, 255, 255, .5);
-  background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 .nav-masthead .nav-link:hover,
