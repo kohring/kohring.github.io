@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="src/Web-2-sw small.jpg">
+    <link rel="icon" href="img/Web-2-sw small.jpg">
 
     <title>Nils Kohring</title>
 
@@ -132,7 +132,7 @@
               <div class="flag-wrapper">
                 <span class="flag">B.Sc. Business Mathematics</span>
               </div>
-              <div class="desc">After graduating from high school I started studying at the University of Cologne. My programs' major was mathematics with the minors of computer science and economics.</div>
+              <div class="desc">After graduating from high school, I started studying at the University of Cologne. My programs' major was mathematics with the minors of computer science and economics.</div>
               <div class="desc">
                 <a target="_blank" rel="noopener noreferrer" href="http://www.mi.uni-koeln.de/main/index.en.php" style="color: grey;">@ Department of Mathematics</a>
                 <br>
@@ -254,7 +254,7 @@
                 <div class="card-header">Programming Languages</div>
                 <div class="card-body">
                   <canvas id="chart-line" width="299" height="200" class="chartjs-render-monitor"></canvas>
-                  Note: Other experiences include working with git and continuous integration. In Python, I've worked with the common ML frameworks like PyTorch, TensorFlow, and Scikit-Learn.
+                  Other experiences include working with git and continuous integration. In Python, I've worked with the common ML frameworks like PyTorch, TensorFlow, and Scikit-Learn.
                 </div>
               </div>
             </div>
@@ -282,9 +282,13 @@
 
       <!-- Footer -->
       <footer class="page-footer">
-        <div class="footer-copyright text-center small"><br/>Copyright © 2020 Nils Kohring, Munich</div>
+        <body onload="myLastModified()">
+          <div class="footer-copyright text-center small">
+            <p>Last modified <span id="time_tag"></span></p>
+            Copyright © 2020 Nils Kohring, Munich
+          </div>
+        </body>
       </footer>
-
     </div>
 
 
@@ -339,6 +343,12 @@
           }
         });
       });
+    </script>
+    <script>
+      function myLastModified() {
+        var x = document.lastModified;
+        document.getElementById("time_tag").innerHTML = x;
+      }
     </script>
 
   </body>
