@@ -219,7 +219,7 @@ object {
  */
 
 
- 
+
 
 /*
  * Contact
@@ -239,6 +239,12 @@ object {
 }
 .social-icon:hover, .social-icon:active, .social-icon:focus {
   background-color: var(--main-color);
+}
+@media screen and (max-width: 660px) {
+  .p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 
