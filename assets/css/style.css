@@ -195,11 +195,13 @@ object {
   border-color: var(--main-color);
   color: white;
 }
-.list-group-item:hover {
-  background-color: rgb(173, 173, 173);
-  border-color: rgb(173, 173, 173);
-  color: black;
-  text-decoration: none !important
+@media screen and (min-width: 660px) {
+  .list-group-item:hover {
+    background-color: rgb(173, 173, 173);
+    border-color: rgb(173, 173, 173);
+    color: black;
+    text-decoration: none !important
+  }
 }
 .tab-pane {
   text-align: left;
