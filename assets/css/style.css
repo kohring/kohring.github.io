@@ -195,7 +195,7 @@ object {
   border-color: var(--main-color);
   color: white;
 }
-@media screen and (min-width: 660px) {
+@media (min-width: 660px) {
   .list-group-item:hover {
     background-color: rgb(173, 173, 173);
     border-color: rgb(173, 173, 173);
