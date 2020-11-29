@@ -44,7 +44,7 @@ body {
   position: relative;
 }
 section {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 /* change text selcetion color */
 ::-moz-selection { 
@@ -57,6 +57,8 @@ section {
 }
 
 
+
+
 /*
  * Header
  */
@@ -67,33 +69,37 @@ section {
 .masthead {
   margin-bottom: 2rem;
 }
-.nav-masthead .nav-link {
+.navbar-nav .nav-link {
+  text-align: right;
   padding: .2rem 0;
   font-weight: 600;
   color: rgba(255, 255, 255, .5);
   border-bottom: .25rem solid transparent;
 }
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
-.nav-masthead .nav-item + .nav-item {
-  margin-left: 1rem;
-}
-.nav-masthead .active {
+.navbar-nav .active {
   color: #fff;
   border-bottom-color: var(--main-color);
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 992px) {
   .navbar {
     width: 99%;
   }
-}
-@media screen and (max-width: 660px) {
-  .nav-item {
-    font-size: .8rem;
+  .navbar-nav .nav-item {
+    font-size: 120%;
+    margin: 2%;
+    text-align: right;
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    width: 8em;
   }
 }
+
+
 
 
 
@@ -190,7 +196,7 @@ object {
   border-color: rgb(228, 228, 228);
   color: black;
 }
-.list-group-item.active {
+.list-group-item.active { 
   background-color: var(--main-color);
   border-color: var(--main-color);
   color: white;
@@ -200,8 +206,10 @@ object {
     background-color: rgb(173, 173, 173);
     border-color: rgb(173, 173, 173);
     color: black;
-    text-decoration: none !important
   }
+}
+.list-group-item {
+  text-decoration: none !important
 }
 .tab-pane {
   text-align: left;
