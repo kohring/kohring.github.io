@@ -4,7 +4,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="description" content="Personal Website">
     <meta name="author" content="Nils Kohring">
     <link rel="icon" href="assets/img/inital-k.png">
@@ -14,44 +13,43 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet 1" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!-- Google fonts import -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display" rel="stylesheet 4">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom styles -->
     <link href="assets/css/style.css" rel="stylesheet 2">
-    <link href="assets/css/timeline.css" rel="stylesheet 3">
-
-    <!-- Google fonts import -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet 4">
+    <link href="assets/css/timeline.css" rel="stylesheet 3">    
   </head>
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Nils Kohring</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbar" aria-controls="navigationbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigationbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="#coding">Coding</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <body class="text-center" data-gr-c-s-loaded="true" data-spy="scroll" data-target=".navbar" >
+  <body class="text-center" data-gr-c-s-loaded="true" data-spy="scroll" data-target=".navbar">
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Nils Kohring</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbar" aria-controls="navigationbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navigationbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-            <li class="nav-item"><a class="nav-link" href="#coding">Coding</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
 
       <!-- Start info -->
       <img class='img-circle' src='assets/img/Web-2-sw small.jpg'/>
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Passionate about Artificial Intelligence and Data Science</h1>
-        <p class="lead">I'm a Ph.D. student at the Technical University of Munich, Germany. My research focuses on the computation of equilibria in games and economic markets via methods of multi-agent reinforcement learning.</p>
+        <h1 class="cover-heading">Passionate about Artificial Intelligence and Machine Learning</h1>
+        <p class="lead">I'm a Ph.D. student at the Technical University of Munich, Germany. My research focuses on the computation of equilibria in games and economic markets via methods of multi-agent reinforcement learning. Besides that, I am enthusiastic about any data related applications and solving the arising challenges.</p>
         <p class="lead">
           <a href="#contact" class="btn btn-lg btn-secondary">Contact</a>
         </p>
@@ -155,9 +153,10 @@
 
       <!-- Cards -->
       <section id="projects">
-        <h2 class='subheading'>Projects</h2>
+        <h2 class='subheading'>Selected Projects</h2>
+        <p>A broad overview of the projects I've worked on in the past</p>
         <div class="card-columns">
-          <div class="card">
+          <div title="no further information available" class="card">
             <img class="card-img-top" src="assets/img/marl.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Research: Multi-Agent Reinforcement Learning</h5>
@@ -165,14 +164,14 @@
               <p class="card-text"><small class="text-muted">Since 2019</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <div class="card-body">
               <h5 class="card-title">Financial Modelling using Online Machine Learning</h5>
               <p class="card-text">The difficulty of predicting developments in the financial markets is to build a machine learning model, which can adapt as quickly as possible, while not neglecting learned dependencies. The project focused on an Online Deep Learning and on a Random Forest modeling approach.</p>
               <p class="card-text"><small class="text-muted">Aug 2019</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <img class="card-img-top" src="assets/img/bayes.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Master's Thesis: Statistical Analysis of Deep Learning Prediction Models using Bayesian Methods</h5>
@@ -180,21 +179,21 @@
               <p class="card-text"><small class="text-muted">Apr 2019</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <div class="card-body">
               <h5 class="card-title">Summer School: Data Science</h5>
               <p class="card-text">In this two week class, multiple aspects and the interdisciplinary nature of data science were worked on in a cooperation of the University of Tokyo and the University of California, Berkeley.</p>
               <p class="card-text"><small class="text-muted">Jul 2018</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <div class="card-body">
               <h5 class="card-title">Term Paper: TensorFlow</h5>
               <p class="card-text">In this work, a broad introductory into the machine learning framework TensorFlow by Google was given and the usage was demonstrated on one real-world application.</p>
               <p class="card-text"><small class="text-muted">Jun 2018</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <img class="card-img-top" src="assets/img/dropout.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Seminar Talk: Dropout in Neural Networks</h5>
@@ -202,7 +201,7 @@
               <p class="card-text"><small class="text-muted">Jul 2017</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <img class="card-img-top" src="assets/img/parareal.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Bachelor's Thesis: Parareal Algorithm</h5>
@@ -210,7 +209,7 @@
               <p class="card-text"><small class="text-muted">Aug 2016</small></p>
             </div>
           </div>
-          <div class="card">
+          <div title="no further information available" class="card">
             <img class="card-img-top" src="assets/img/page-rank.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Seminar Talk: PageRank Algorithm</h5>
@@ -225,7 +224,7 @@
       <!-- Teaching -->
       <section id="teaching">
         <h2 class='subheading'>Teaching</h2>
-        <p>short summary of teaching at university</p>
+        <p>A short summary of teaching at university</p>
         <div class="row">
           <div class="col-5">
             <div class="list-group" role="tablist">
@@ -251,7 +250,7 @@
       <!-- Coding -->
       <section id="coding">
         <h2 class='subheading'>Coding</h2>
-        <p>rough graphical assessment of programming experience</p>
+        <p>A rough stylized assessment of my programming experience</p>
         <div class="page-content page-container" id="page-content">
           <div class="card">
             <div class="card-header">Programming Languages</div>
@@ -268,7 +267,7 @@
       <!-- Contact -->
       <section id="contact">
         <h2 class='subheading'>Contact</h2>
-        <p>feel free to check out more information or contact me on the following platforms</p>
+        <p>Feel free to check out more information or contact me on the following platforms</p>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <div class="social">
           <a class="social-icon" target="_blank" rel="noopener noreferrer" href="https://github.com/kohring">
@@ -292,8 +291,8 @@
           </div>
         </body>
       </footer>
-    </div>
 
+    </div>
 
     <!-- Some JavaScript -->
     <script type="text/javascript">
