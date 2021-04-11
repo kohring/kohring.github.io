@@ -63,6 +63,7 @@ section {
  */
 .navbar {
   background: rgba(25, 25, 25, 0.6) !important;
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   z-index: 9999;
 }
