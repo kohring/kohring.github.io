@@ -175,11 +175,11 @@ object {
  * Projects
  */
 .card {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(50, 50, 50);
   text-align: left;
 }
 .card:hover {
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(65, 65, 65);
 }
 .card-title {
 	color: var(--main-color);
