@@ -30,8 +30,6 @@ a:hover {
  */
 body {
   background-color: rgb(30, 30, 30);
-}
-body {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
