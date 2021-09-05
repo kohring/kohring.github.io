@@ -60,7 +60,7 @@ section {
  * Header
  */
 .navbar {
-  background: rgba(25, 25, 25, 0.6) !important;
+  background: rgba(25, 25, 25, 0.7) !important;
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   z-index: 9999;
@@ -85,7 +85,7 @@ section {
 }
 @media screen and (max-width: 992px) {
   .navbar {
-    width: 99%;
+    width: 100%;
   }
   .navbar-nav .nav-item {
     font-size: 120%;
@@ -183,35 +183,32 @@ object {
 	color: var(--main-color);
   font-weight: normal;
 }
+.card-columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+@media screen and (max-width: 992px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 660px) {
   .card-columns {
-    padding-left: 1%;
-    padding-right: 1%;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     column-count: 1;
-    margin: 0 auto;
   }
   .card {
-    width: 95%;
-    margin: 0 auto;
-    float: none;
+    width: 99%;
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 660px) and (max-width: 960px) {
-  .card-columns {
-    padding-left: 1%;
-    padding-right: 1%;
-    column-count: 2;
-    margin: 0 auto;
-  }
-  .card {
-    width: 90%;
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 10px;
-  }
-}
-
 
 
 /*
