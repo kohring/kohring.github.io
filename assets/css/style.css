@@ -10,7 +10,7 @@ a:hover {
   color: #fff;
 }
 :root {
-  --main-color: rgb(255, 80, 80);
+  --main-color: rgb(91, 101, 207);
 }
 
 /* Custom default button */
@@ -43,7 +43,7 @@ body {
 section {
   padding-top: 3rem;
 }
-/* change text selcetion color */
+/* change text selection color */
 ::-moz-selection { 
   color: white;
   background: var(--main-color);
@@ -211,22 +211,34 @@ object {
 }
 
 
+
+/*
+ * Publication
+ */
+.list-group-item.publication {
+  background-color: rgb(50, 50, 50);
+  text-align: left;
+}
+.list-group-item.publication:hover {
+  background-color: var(--main-color);
+}
+
+
+
 /*
  * Teaching
  */
-.list-group-item {
+ .list-group-item.teaching {
   text-align: left;
-  background-color: rgb(228, 228, 228);
-  border-color: rgb(228, 228, 228);
-  color: black;
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(50, 50, 50);
 }
-.list-group-item:hover {
-  background-color: rgb(173, 173, 173);
-  border-color: rgb(173, 173, 173);
-  color: black;
+.list-group-item.teaching:hover {
+  background-color: rgb(65, 65, 65);
+  border-color: rgb(65, 65, 65);
   text-decoration: none;
 }
-.list-group-item.active { 
+.list-group-item.teaching.active { 
   background-color: var(--main-color);
   border-color: var(--main-color);
   color: white;
@@ -237,10 +249,9 @@ object {
 @media screen and (max-width: 660px) {
   .row {
     width: 100%;
-    margin: 0 auto;
   }
-  .list-group-item {
-    font-size: 85%;
+  .list-group-item.teaching {
+    font-size: 90%;
     padding-inline: 6%;
     padding-top: 7%;
     padding-bottom: 7%;
